@@ -58,7 +58,8 @@
 			 
 			 <div class="modal-body">
              <form method="post" id="payment-form" action="<?php echo $baseUrl;?>checkout.php">
-                    <label for="amount">
+                    <section>
+					<label for="amount">
                         <span class="input-label">Amount</span>
                         <div class="input-wrapper amount-wrapper">
                             <input id="amount" name="amount" type="tel" min="1" placeholder="Amount" value="10">
@@ -68,7 +69,7 @@
                         <div id="bt-dropin"></div>
                     </div>
                  </div>
-
+                </section>
                 <div class="modal-footer">
                 <input id="nonce" name="payment_method_nonce" type="hidden" />
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
