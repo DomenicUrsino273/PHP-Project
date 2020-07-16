@@ -42,42 +42,27 @@
     </div>
 </div>
 
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
 
-<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-        <table cellpadding="0" cellspacing="0">
-                <tbody>
-                    <tr>
-                        <b><td>Transaction ID:</td></b>
-                        <td><?php echo($transaction->id)?></td>
-                    </tr>
-                    <tr>
-                        <td>Type:</td>
-                        <td><?php echo($transaction->type)?></td>
-                    </tr>
-                    <tr>
-                        <td>Amount:</td>
-                        <td>$ <?php echo($transaction->amount)?></td>
-                    </tr>
-                    <tr>
-                        <td>Status:</td>
-                        <td><?php echo($transaction->status)?></td>
-                    </tr>
-                    <tr>
-                        <td>Created At:</td>
-                        <td><?php echo($transaction->createdAt->format('Y-m-d H:i:s'))?></td>
-                    </tr>
-                    <tr>
-                        <td>Updated At:</td>
-                        <td><?php echo($transaction->updatedAt->format('Y-m-d H:i:s'))?></td>
-                    </tr>
-                </tbody>
-            </table>
-    </div>
-  </div>
-</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Transaction ID</td>
+      <td>Type</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td><?php echo($transaction->id)?></td>
+      <td><?php echo($transaction->type)?></td>
+    </tr>
+  </tbody>
+</table>
 
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
