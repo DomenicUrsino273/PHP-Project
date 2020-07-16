@@ -36,6 +36,66 @@
             </form></p>
         </div>
     </div>
+	
+	<div class="wrapper">
+        <div class="checkout container">
+
+          <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+             Launch demo modal
+            </button>
+
+                 <!-- Modal -->
+             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+             <div class="modal-dialog" role="document">
+             <div class="modal-content">
+             <div class="modal-header">
+             <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+			 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+             <span aria-hidden="true">&times;</span>
+             </button>
+             </div>
+			 
+			 <div class="modal-body">
+             <form method="post" id="payment-form" action="<?php echo $baseUrl;?>checkout.php">
+                    <label for="amount">
+                        <span class="input-label">Amount</span>
+                        <div class="input-wrapper amount-wrapper">
+                            <input id="amount" name="amount" type="tel" min="1" placeholder="Amount" value="10">
+                        </div>
+                    </label>
+                    <div class="bt-drop-in-wrapper">
+                        <div id="bt-dropin"></div>
+                    </div>
+                 </div>
+
+                <div class="modal-footer">
+                <input id="nonce" name="payment_method_nonce" type="hidden" />
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button class="btn btn-primary" type="submit"><span>Test Transaction</span></button>
+                </div>
+                </div>
+                </div>
+                </div>
+            </form>
+        </div>
+    </div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
     <script src="https://js.braintreegateway.com/web/dropin/1.23.0/js/dropin.min.js"></script>
     <script>
