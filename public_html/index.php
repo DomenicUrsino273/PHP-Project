@@ -44,9 +44,9 @@
                     <section>
 					<label for="amount">
                         <b><span class="input-label">Amount</span></b>
-                        <p><div class="input-wrapper amount-wrapper">
+                        <div class="input-wrapper amount-wrapper">
                             <input id="amount" name="amount" type="tel" min="1" placeholder="" value="">
-                        </div></p>
+                        </div>
                     </label>
 					
                     <p><div class="bt-drop-in-wrapper">
