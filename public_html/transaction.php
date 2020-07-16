@@ -169,16 +169,6 @@
             </table>
         </section>i
         <?php endif; ?>
-
-        <section>
-            <p class="center small">Integrate with the Braintree SDK for a secure and seamless checkout</p>
-        </section>
-
-        <section>
-            <a class="button secondary full" href="https://developers.braintreepayments.com/guides/drop-in" target="_blank">
-                <span>See the Docs</span>
-            </a>
-        </section>
     </article>
 </aside>
 
