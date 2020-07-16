@@ -65,12 +65,12 @@
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>Transaction ID</td>
+      <b><td>Transaction ID</td></b>
       <td><?php echo($transaction->id)?></td>
     </tr>
     <tr>
       <tr>
-      <th scope="row">1</th>
+      <th scope="row">2</th>
       <td>Type</td>
       <td><?php echo($transaction->type)?></td>
     </tr>
