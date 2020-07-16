@@ -50,7 +50,7 @@
                     </label>
 					<label for="firstName">
                         <b><span class="input-label">First Name</span></b>
-                        <div class="input-wrapper firstName-wrapper">
+                        <div class="input-wrapper">
                             <input id="firstName" name="firstName" type="text" min="1" placeholder="" value="">
                         </div>
                     </label>
