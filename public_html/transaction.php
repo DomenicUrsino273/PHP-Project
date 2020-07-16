@@ -52,14 +52,16 @@
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
+      <th scope="row"></th>
       <td>Transaction ID</td>
-      <td>Type</td>
+      <td><?php echo($transaction->type)?></td>
     </tr>
     <tr>
-      <th scope="row">2</th>
+      <tr>
+      <th scope="row"></th>
+      <td>Type</td>
       <td><?php echo($transaction->id)?></td>
-      <td><?php echo($transaction->type)?></td>
+    </tr>
     </tr>
   </tbody>
 </table>
