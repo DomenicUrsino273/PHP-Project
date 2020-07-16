@@ -34,7 +34,7 @@
 
 <center><ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item">
-    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Transaction Response</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
@@ -44,23 +44,8 @@
   </li>
 </ul>
 <div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div></center> 
-</div>
-
-<aside class="drawer dark">
-    <header>
-        <div class="content compact">
-            <a href="https://developers.braintreepayments.com" class="braintree" target="_blank">Braintree</a>
-            <h3>API Response</h3>
-        </div>
-    </header>
-
-    <article class="content compact">
-        <section>
-            <h5>Transaction</h5>
-            <table cellpadding="0" cellspacing="0">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+  <table cellpadding="0" cellspacing="0">
                 <tbody>
                     <tr>
                         <td>id</td>
@@ -88,8 +73,14 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
+  </div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div></center> 
+</div>
 
+<aside class="drawer dark">
+  
+    <article class="content compact">
         <section>
             <h5>Payment</h5>
 
