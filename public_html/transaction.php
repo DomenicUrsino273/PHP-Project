@@ -45,38 +45,23 @@
 
 
 
-<ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Transaction Response</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Payment Details</a>
-  </li>
-</ul>
-<div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-  <table class="table">
-  <thead>
-    <tr>
-      <th scope="col"></th>
-      <th scope="col"></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <b><td>Transaction ID</td></b>
-      <td><?php echo($transaction->id)?></td>
-    </tr>
-    <tr>
-      <tr>
-      <th scope="row">2</th>
-      <td>Type</td>
-      <td><?php echo($transaction->type)?></td>
-    </tr>
-    </tr>
-  </tbody>
-</table>
+<form>
+  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-2 col-form-label"><b>Email</b></label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+  </div>
+</form>
+
+
+
   </div>
   <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
         <table cellpadding="0" cellspacing="0">
