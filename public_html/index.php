@@ -48,6 +48,12 @@
                             <input id="amount" name="amount" type="tel" min="1" placeholder="" value="">
                         </div>
                     </label>
+					<label for="firstName">
+                        <b><span class="input-label">First Name</span></b>
+                        <div class="input-wrapper firstName-wrapper">
+                            <input id="firstName" name="firstName" type="text" min="1" placeholder="" value="">
+                        </div>
+                    </label>
 					
                     <p><div class="bt-drop-in-wrapper">
                         <div id="bt-dropin"></div>
