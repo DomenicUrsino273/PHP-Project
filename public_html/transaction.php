@@ -43,28 +43,6 @@
 </div>
 
 
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col"></th>
-      <th scope="col"></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row"></th>
-      <td>Transaction ID</td>
-      <td><?php echo($transaction->type)?></td>
-    </tr>
-    <tr>
-      <tr>
-      <th scope="row"></th>
-      <td>Type</td>
-      <td><?php echo($transaction->id)?></td>
-    </tr>
-    </tr>
-  </tbody>
-</table>
 
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -77,34 +55,28 @@
 </ul>
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-  <table cellpadding="0" cellspacing="0">
-                <tbody>
-                    <tr>
-                        <td>Transaction ID:</td>
-                        <td><?php echo($transaction->id)?></td>
-                    </tr>
-                    <tr>
-                        <td>Type:</td>
-                        <td><?php echo($transaction->type)?></td>
-                    </tr>
-                    <tr>
-                        <td>Amount:</td>
-                        <td>$ <?php echo($transaction->amount)?></td>
-                    </tr>
-                    <tr>
-                        <td>Status:</td>
-                        <td><?php echo($transaction->status)?></td>
-                    </tr>
-                    <tr>
-                        <td>Created At:</td>
-                        <td><?php echo($transaction->createdAt->format('Y-m-d H:i:s'))?></td>
-                    </tr>
-                    <tr>
-                        <td>Updated At:</td>
-                        <td><?php echo($transaction->updatedAt->format('Y-m-d H:i:s'))?></td>
-                    </tr>
-                </tbody>
-            </table>
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Transaction ID</td>
+      <td><?php echo($transaction->id)?></td>
+    </tr>
+    <tr>
+      <tr>
+      <th scope="row">1</th>
+      <td>Type</td>
+      <td><?php echo($transaction->type)?></td>
+    </tr>
+    </tr>
+  </tbody>
+</table>
   </div>
   <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
         <table cellpadding="0" cellspacing="0">
