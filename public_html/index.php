@@ -18,7 +18,7 @@
 		</center> 		
 		
 	    <p><center><div class="alert alert-danger" role="alert">
-         Just an FYI: This Page <b>Does Not</b> Process Real Transactions!
+         <b>FYI:<b> This Page Is For Test Purposes Only!
          </div></p></center>        
 		
 		
