@@ -35,7 +35,7 @@
         <div class="content">
        
 	   <div class="alert alert-success" role="alert">
-       <h2><?php echo($header)?></h2>
+       <center><h2><?php echo($header)?></h2></center>
        </div>
 
         </div>
