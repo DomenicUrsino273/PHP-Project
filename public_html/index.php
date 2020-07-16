@@ -13,7 +13,7 @@
 
           <!-- Button trigger modal -->
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-             Launch demo modal
+             Click Me!
             </button>
 
                  <!-- Modal -->
@@ -43,8 +43,8 @@
                 </section>
                 <div class="modal-footer">
                 <input id="nonce" name="payment_method_nonce" type="hidden" />
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button class="btn btn-primary" type="submit"><span>Test Transaction</span></button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <button class="btn btn-success" type="submit"><span>Process Transaction</span></button>
                 </div>
                 </div>
                 </div>
@@ -52,21 +52,6 @@
             </form>
         </div>
     </div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 
     <script src="https://js.braintreegateway.com/web/dropin/1.23.0/js/dropin.min.js"></script>
