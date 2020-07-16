@@ -50,7 +50,7 @@
         <table cellpadding="0" cellspacing="0">
                 <tbody>
                     <tr>
-                        <td>Transaction ID:</td>
+                        <b><td>Transaction ID:</td></b>
                         <td><?php echo($transaction->id)?></td>
                     </tr>
                     <tr>
