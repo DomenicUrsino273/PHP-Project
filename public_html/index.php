@@ -17,6 +17,11 @@
 		
 		</center> 		
 		
+	    <p><center><div class="alert alert-danger" role="alert">
+         Just an FYI: This Page <b>Does Not</b> Process Real Transactions!
+         </div></p></center>        
+		
+		
 		<div class="checkout container">
           <!-- Button trigger modal -->
             <p><center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
