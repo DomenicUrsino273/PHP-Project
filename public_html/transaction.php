@@ -31,136 +31,81 @@
         }
     }
 ?>
-<center><ul class="nav nav-tabs" id="myTab" role="tablist">
+<ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item">
     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Transaction Response</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Payment Details</a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-  </li>
-</ul></center>
+</ul>
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
   <table cellpadding="0" cellspacing="0">
                 <tbody>
                     <tr>
-                        <td>id</td>
+                        <b><td>Transaction ID:</td></b>
                         <td><?php echo($transaction->id)?></td>
                     </tr>
                     <tr>
-                        <td>type</td>
+                        <b><td>Type:</td></b>
                         <td><?php echo($transaction->type)?></td>
                     </tr>
                     <tr>
-                        <td>amount</td>
-                        <td><?php echo($transaction->amount)?></td>
+                        <b><td>Amount:</td></b>
+                        <td>$ <?php echo($transaction->amount)?></td>
                     </tr>
                     <tr>
-                        <td>status</td>
+                        <b><td>Status:</td></b>
                         <td><?php echo($transaction->status)?></td>
                     </tr>
                     <tr>
-                        <td>created_at</td>
+                        <b><td>Created At:</td></b>
                         <td><?php echo($transaction->createdAt->format('Y-m-d H:i:s'))?></td>
                     </tr>
                     <tr>
-                        <td>updated_at</td>
+                        <b><td>Updated At:</td></b>
                         <td><?php echo($transaction->updatedAt->format('Y-m-d H:i:s'))?></td>
                     </tr>
                 </tbody>
             </table>
   </div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
-</div>
-
-<aside class="drawer dark">
-  
-    <article class="content compact">
-        <section>
-            <h5>Payment</h5>
-
-            <table cellpadding="0" cellspacing="0">
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <table cellpadding="0" cellspacing="0">
                 <tbody>
                     <tr>
-                        <td>token</td>
+                        <b><td>Token:</td></b>
                         <td><?php echo($transaction->creditCardDetails->token)?></td>
                     </tr>
                     <tr>
-                        <td>bin</td>
+                        <b><td>Card Bin Range:</td></b>
                         <td><?php echo($transaction->creditCardDetails->bin)?></td>
                     </tr>
                     <tr>
-                        <td>last_4</td>
+                        <b><td>Last 4 Digits:</td></b>
                         <td><?php echo($transaction->creditCardDetails->last4)?></td>
                     </tr>
                     <tr>
-                        <td>card_type</td>
+                        <b><td>Card Type:</td></b>
                         <td><?php echo($transaction->creditCardDetails->cardType)?></td>
                     </tr>
                     <tr>
-                        <td>expiration_date</td>
+                        <b><td>Exp. Date:</td></b>
                         <td><?php echo($transaction->creditCardDetails->expirationDate)?></td>
                     </tr>
                     <tr>
-                        <td>cardholder_name</td>
+                        <b><td>CardHolder Name:</td></b>
                         <td><?php echo($transaction->creditCardDetails->cardholderName)?></td>
                     </tr>
                     <tr>
-                        <td>customer_location</td>
+                        <b><td>CardHolder Location:</td></b>
                         <td><?php echo($transaction->creditCardDetails->customerLocation)?></td>
                     </tr>
                 </tbody>
             </table>
-        </section>
 
-        <?php if (!is_null($transaction->customerDetails->id)) : ?>
-        <section>
-            <h5>Customer Details</h5>
-            <table cellpadding="0" cellspacing="0">
-                <tbody>
-                    <tr>
-                        <td>id</td>
-                        <td><?php echo($transaction->customerDetails->id)?></td>
-                    </tr>
-                    <tr>
-                        <td>first_name</td>
-                        <td><?php echo($transaction->customerDetails->firstName)?></td>
-                    </tr>
-                    <tr>
-                        <td>last_name</td>
-                        <td><?php echo($transaction->customerDetails->lastName)?></td>
-                    </tr>
-                    <tr>
-                        <td>email</td>
-                        <td><?php echo($transaction->customerDetails->email)?></td>
-                    </tr>
-                    <tr>
-                        <td>company</td>
-                        <td><?php echo($transaction->customerDetails->company)?></td>
-                    </tr>
-                    <tr>
-                        <td>website</td>
-                        <td><?php echo($transaction->customerDetails->website)?></td>
-                    </tr>
-                    <tr>
-                        <td>phone</td>
-                        <td><?php echo($transaction->customerDetails->phone)?></td>
-                    </tr>
-                    <tr>
-                        <td>fax</td>
-                        <td><?php echo($transaction->customerDetails->fax)?></td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>i
-        <?php endif; ?>
-    </article>
-</aside>
-
+  </div>
+</div>
 
 </body>
 </html>
