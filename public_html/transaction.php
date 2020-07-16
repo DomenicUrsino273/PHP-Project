@@ -42,21 +42,42 @@
     </div>
 </div>
 
-<form>
-<h2>Testing Form</h2>
-  <div class="form-group row">
-    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-    <div class="col-sm-10">
-      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="<?php echo($transaction->id)?>">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <table cellpadding="0" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <td>Transaction ID:</td>
+                        <td><?php echo($transaction->id)?></td>
+                    </tr>
+                    <tr>
+                        <td>Type:</td>
+                        <td><?php echo($transaction->type)?></td>
+                    </tr>
+                    <tr>
+                        <td>Amount:</td>
+                        <td>$ <?php echo($transaction->amount)?></td>
+                    </tr>
+                    <tr>
+                        <td>Status:</td>
+                        <td><?php echo($transaction->status)?></td>
+                    </tr>
+                    <tr>
+                        <td>Created At:</td>
+                        <td><?php echo($transaction->createdAt->format('Y-m-d H:i:s'))?></td>
+                    </tr>
+                    <tr>
+                        <td>Updated At:</td>
+                        <td><?php echo($transaction->updatedAt->format('Y-m-d H:i:s'))?></td>
+                    </tr>
+                </tbody>
+            </table>
     </div>
   </div>
-  <div class="form-group row">
-    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
-    <div class="col-sm-10">
-      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
-    </div>
-  </div></form>
-
+</div>
 
 
 <ul class="nav nav-tabs" id="myTab" role="tablist">
