@@ -21,16 +21,31 @@
         ];
 
         if (in_array($transaction->status, $transactionSuccessStatuses)) {
-            $header = "Sweet Success!";
+            $header = "Transaction Approved";
             $icon = "success";
-            $message = "Your test transaction has been successfully processed. See the Braintree API response and try again.";
         } else {
             $header = "Transaction Failed";
             $icon = "fail";
-            $message = "Your test transaction has a status of " . $transaction->status . ". See the Braintree API response and try again.";
         }
     }
 ?>
+
+<div class="wrapper">
+    <div class="response container">
+        <div class="content">
+            <div class="icon">
+            <img src="/images/<?php echo($icon)?>.svg" alt="">
+            </div>
+
+            <h1><?php echo($header)?></h1>
+        </div>
+    </div>
+</div>
+
+
+
+
+
 <ul class="nav nav-tabs" id="myTab" role="tablist">
   <li class="nav-item">
     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Transaction Response</a>
