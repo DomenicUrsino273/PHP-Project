@@ -33,11 +33,11 @@
 <div class="wrapper">
     <div class="response container">
         <div class="content">
-            <div class="icon">
-            <img src="/images/<?php echo($icon)?>.svg" alt="">
-            </div>
+       
+	   <div class="alert alert-success" role="alert">
+       <h2><?php echo($header)?></h2>
+       </div>
 
-            <h1><?php echo($header)?></h1>
         </div>
     </div>
 </div>
