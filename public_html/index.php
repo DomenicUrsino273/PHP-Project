@@ -18,7 +18,7 @@
 		</center> 		
 		
 	    <p><center><div class="alert alert-danger" role="alert">
-         <b>FYI:<b> This Page Is For Test Purposes Only!
+         <b>FYI:</b> This Page Is For Test Purposes Only!
          </div></p></center>        
 		
 		
