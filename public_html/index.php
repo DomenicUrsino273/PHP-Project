@@ -1,14 +1,13 @@
 <?php require_once("../includes/braintree_init.php"); ?>
 
 <html>
-<?php require_once("../includes/head.php"); ?>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 <body>
-
-    <?php require_once("../includes/header.php"); ?>
-
     <div class="wrapper">
         <div class="checkout container">
 
@@ -20,18 +19,16 @@
             </header>
 
             <form method="post" id="payment-form" action="<?php echo $baseUrl;?>checkout.php">
-                <section>
-                    <label for="amount">
-                        <span class="input-label">Amount</span>
-                        <div class="input-wrapper amount-wrapper">
-                            <input id="amount" name="amount" type="tel" min="1" placeholder="Amount" value="10">
-                        </div>
-                    </label>
-
-                    <div class="bt-drop-in-wrapper">
-                        <div id="bt-dropin"></div>
-                    </div>
-                </section>
+                
+				<section>
+				
+				<div class="form-group">
+                <label for="exampleFormControlInput1">Transaction Amount</label>
+                <input id="amount" name="amount" type="tel" min="1" placeholder="Amount" value="10">
+                </div>
+				 
+				</section>
+		
 
                 <input id="nonce" name="payment_method_nonce" type="hidden" />
                 <button class="button" type="submit"><span>Test Transaction</span></button>
