@@ -21,7 +21,7 @@
         ];
 
         if (in_array($transaction->status, $transactionSuccessStatuses)) {
-            $header = "Transaction Approved";
+            $header = "Your Transaction Was Approved!";
             $icon = "success";
         } else {
             $header = "Transaction Failed";
