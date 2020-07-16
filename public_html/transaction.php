@@ -1,6 +1,6 @@
 <?php  require_once("../includes/braintree_init.php"); ?>
 <html>
-<?php require_once("../includes/head.php"); ?>
+
 <body>
 
 <?php
