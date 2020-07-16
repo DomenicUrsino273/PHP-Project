@@ -9,10 +9,14 @@
 <body>
  	
 	<div class="wrapper">
-        <header>
-                <h1>Domenic's eCommerce Demo</h1>
+        <center>
+		
+	    <header>
+        <h2>Domenic's eCommerce Demo</h2>
         </header>
-			
+		
+		</center> 		
+		
 		<div class="checkout container">
           <!-- Button trigger modal -->
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
