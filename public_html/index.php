@@ -25,7 +25,7 @@
 		<div class="checkout container">
           <!-- Button trigger modal -->
             <p><center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-             Click Me!
+             Click Me...
             </button></center></p>
 
              <!-- Modal -->
