@@ -17,7 +17,7 @@
                 </p>
             </header>
 
-            <form method="post" id="payment-form" action="<?php echo $baseUrl;?>checkout.php">
+            <p><form method="post" id="payment-form" action="<?php echo $baseUrl;?>checkout.php">
                 <section>
                     <label for="amount">
                         <span class="input-label">Amount</span>
@@ -33,7 +33,7 @@
 
                 <input id="nonce" name="payment_method_nonce" type="hidden" />
                 <button class="btn btn-primary" type="submit"><span>Test Transaction</span></button>
-            </form>
+            </form></p>
         </div>
     </div>
 
