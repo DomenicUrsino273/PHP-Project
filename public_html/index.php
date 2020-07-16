@@ -48,9 +48,11 @@
                             <input id="amount" name="amount" type="tel" min="1" placeholder="Amount" value="10">
                         </div>
                     </label>
-                    <div class="bt-drop-in-wrapper">
+					
+                    <p><div class="bt-drop-in-wrapper">
                         <div id="bt-dropin"></div>
-                    </div>
+                    </div></p>
+					
                  </div>
                 </section>
                 <div class="modal-footer">
