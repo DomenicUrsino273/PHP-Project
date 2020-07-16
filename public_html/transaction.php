@@ -44,27 +44,27 @@
   <table cellpadding="0" cellspacing="0">
                 <tbody>
                     <tr>
-                        <b><td>Transaction ID:</td></b>
+                        <td>Transaction ID:</td>
                         <td><?php echo($transaction->id)?></td>
                     </tr>
                     <tr>
-                        <b><td>Type:</td></b>
+                        <td>Type:</td>
                         <td><?php echo($transaction->type)?></td>
                     </tr>
                     <tr>
-                        <b><td>Amount:</td></b>
+                        <td>Amount:</td>
                         <td>$ <?php echo($transaction->amount)?></td>
                     </tr>
                     <tr>
-                        <b><td>Status:</td></b>
+                        <td>Status:</td>
                         <td><?php echo($transaction->status)?></td>
                     </tr>
                     <tr>
-                        <b><td>Created At:</td></b>
+                        <td>Created At:</td>
                         <td><?php echo($transaction->createdAt->format('Y-m-d H:i:s'))?></td>
                     </tr>
                     <tr>
-                        <b><td>Updated At:</td></b>
+                        <td>Updated At:</td>
                         <td><?php echo($transaction->updatedAt->format('Y-m-d H:i:s'))?></td>
                     </tr>
                 </tbody>
@@ -74,31 +74,31 @@
         <table cellpadding="0" cellspacing="0">
                 <tbody>
                     <tr>
-                        <b><td>Token:</td></b>
+                        <td>Token:</td>
                         <td><?php echo($transaction->creditCardDetails->token)?></td>
                     </tr>
                     <tr>
-                        <b><td>Card Bin Range:</td></b>
+                        <td>Card Bin Range:</td>
                         <td><?php echo($transaction->creditCardDetails->bin)?></td>
                     </tr>
                     <tr>
-                        <b><td>Last 4 Digits:</td></b>
+                        <td>Last 4 Digits:</td>
                         <td><?php echo($transaction->creditCardDetails->last4)?></td>
                     </tr>
                     <tr>
-                        <b><td>Card Type:</td></b>
+                        <td>Card Type:</td>
                         <td><?php echo($transaction->creditCardDetails->cardType)?></td>
                     </tr>
                     <tr>
-                        <b><td>Exp. Date:</td></b>
+                        <td>Exp. Date:</td>
                         <td><?php echo($transaction->creditCardDetails->expirationDate)?></td>
                     </tr>
                     <tr>
-                        <b><td>CardHolder Name:</td></b>
+                        <td>CardHolder Name:</td>
                         <td><?php echo($transaction->creditCardDetails->cardholderName)?></td>
                     </tr>
                     <tr>
-                        <b><td>CardHolder Location:</td></b>
+                        <td>CardHolder Location:</td>
                         <td><?php echo($transaction->creditCardDetails->customerLocation)?></td>
                     </tr>
                 </tbody>
@@ -106,6 +106,8 @@
 
   </div>
 </div>
+ 
+
 
 </body>
 </html>
