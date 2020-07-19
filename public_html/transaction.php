@@ -22,85 +22,41 @@
 
         if (in_array($transaction->status, $transactionSuccessStatuses)) {
             $header = "Your Transaction Was Approved!";
-            $icon = "success";
         } else {
-            $header = "Transaction Failed";
-            $icon = "fail";
+            $header = "Your Transaction Failed!";
         }
     }
 ?>
-
-<div class="wrapper">
-    <div class="response container">
-        <div class="content">
-       
-	   <div class="alert alert-success" role="alert">
-       <center><h2><?php echo($header)?></h2></center>
-       </div>
-
-        </div>
-    </div>
-</div>
-
-
-
-
-<form>
-  <div class="form-group row">
-    <label for="staticEmail" class="col-sm-2 col-form-label"><b>Email</b></label>
-    <div class="col-sm-10">
-      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-    </div>
-  </div>
-</form>
-
-
-
-  </div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-        <table cellpadding="0" cellspacing="0">
-                <tbody>
-                    <tr>
-                        <td>Token:</td>
-                        <td><?php echo($transaction->creditCardDetails->token)?></td>
-                    </tr>
-                    <tr>
-                        <td>Card Bin Range:</td>
-                        <td><?php echo($transaction->creditCardDetails->bin)?></td>
-                    </tr>
-                    <tr>
-                        <td>Last 4 Digits:</td>
-                        <td><?php echo($transaction->creditCardDetails->last4)?></td>
-                    </tr>
-                    <tr>
-                        <td>Card Type:</td>
-                        <td><?php echo($transaction->creditCardDetails->cardType)?></td>
-                    </tr>
-                    <tr>
-                        <td>Exp. Date:</td>
-                        <td><?php echo($transaction->creditCardDetails->expirationDate)?></td>
-                    </tr>
-                    <tr>
-                        <td>CardHolder Name:</td>
-                        <td><?php echo($transaction->creditCardDetails->cardholderName)?></td>
-                    </tr>
-                    <tr>
-                        <td>CardHolder Location:</td>
-                        <td><?php echo($transaction->creditCardDetails->customerLocation)?></td>
-                    </tr>
-                </tbody>
-            </table>
-
-  </div>
-</div>
- 
-
-
+<table width="200" border="1">
+  <tbody>
+    <tr>
+      <th scope="col">Transaction</th>
+    </tr>
+    <tr>
+     <td>id</td>
+     <td><?php echo($transaction->id)?></td>
+    </tr>
+    <tr>
+      <td>type</td>
+      <td><?php echo($transaction->type)?></td>
+    </tr>
+    <tr>
+      <td>amount</td>
+      <td><?php echo($transaction->amount)?></td>
+    </tr>
+    <tr>
+      <td>status</td>
+      <td><?php echo($transaction->status)?></td>
+    </tr>
+    <tr>
+     <td>created_at</td>
+      <td><?php echo($transaction->createdAt->format('Y-m-d H:i:s'))?></td>>
+    </tr>
+    <tr>
+     <td>updated_at</td>
+     <td><?php echo($transaction->updatedAt->format('Y-m-d H:i:s'))?></td>
+    </tr>
+  </tbody>
+</table>
 </body>
 </html>
