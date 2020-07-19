@@ -25,7 +25,7 @@
 		<div class="checkout container">
           <!-- Button trigger modal -->
             <p><center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-             Click Me...
+             Drop-In UI Demo
             </button></center></p>
 
              <!-- Modal -->
@@ -48,12 +48,6 @@
                             <input id="amount" name="amount" type="tel" min="1" placeholder="" value="">
                         </div>
                     </label>
-					<label for="firstName">
-                        <b><span class="input-label">First Name</span></b>
-                        <div class="input-wrapper">
-                            <input id="firstName" name="firstName" type="text" min="1" placeholder="" value="">
-                        </div>
-                    </label>
 					
                     <p><div class="bt-drop-in-wrapper">
                         <div id="bt-dropin"></div>
@@ -72,8 +66,6 @@
             </form>
         </div>
     </div>
-	
-
     <script src="https://js.braintreegateway.com/web/dropin/1.23.0/js/dropin.min.js"></script>
     <script>
         var form = document.querySelector('#payment-form');
