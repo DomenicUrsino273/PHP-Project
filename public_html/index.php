@@ -74,11 +74,9 @@
         braintree.dropin.create({
           authorization: client_token,
           selector: '#bt-dropin',
-         paypal: {
-    singleUse: true,
-    amount: 100.00,
-    currency: 'AUD'
-  },
+          paypal: {
+            flow: 'vault'
+          },
 		card: {       // Adding CardHolderName field to collect details
         cardholderName: {
         required: true
