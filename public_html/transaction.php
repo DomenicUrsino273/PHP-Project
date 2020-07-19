@@ -27,6 +27,19 @@
         }
     }
 ?>
+
+<div class="wrapper"> 
+    <div class="response container">
+        <div class="content">
+
+	   <div class="alert alert-success" role="alert">
+       <center><h2><?php echo($header)?></h2></center>
+       </div>
+
+        </div>
+    </div>
+</div>
+
 <table width="200" border="1">
   <tbody>
     <tr>
