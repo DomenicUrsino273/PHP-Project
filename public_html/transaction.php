@@ -60,27 +60,27 @@
       <table width="200" border="1">
   <tbody>
     <tr>
-        <td>id</td>
-        <td><?php echo($transaction->id)?></td>
+<strong><td>id</td></strong> 
+<td><?php echo($transaction->id)?></td>
     </tr>
     <tr>
-     <td>type</td>
+     <strong><td>type</td></strong> 
       <td><?php echo($transaction->type)?></td>
     </tr>
     <tr>
-      <td>amount</td>
+      <strong><td>amount</td></strong>
       <td><?php echo($transaction->amount)?></td>
     </tr>
     <tr>
-       <td>status</td>
+       <strong><td>status</td></strong>
         <td><?php echo($transaction->status)?></td>
     </tr>
     <tr>
-       <td>created_at</td>
+       <strong><td>created_at</td></strong>
        <td><?php echo($transaction->createdAt->format('Y-m-d H:i:s'))?></td>
     </tr>
     <tr>
-      <td>updated_at</td>
+     <strong><td>updated_at</td></strong>
       <td><?php echo($transaction->updatedAt->format('Y-m-d H:i:s'))?></td>
     </tr>
   </tbody>
