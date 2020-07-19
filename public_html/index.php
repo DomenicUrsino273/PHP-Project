@@ -76,7 +76,7 @@
           selector: '#bt-dropin',
           paypal: {
     flow: 'checkout',
-    amount: '10.00',
+    amount: '100.00',
     currency: 'AUD'
   },
 		card: {       // Adding CardHolderName field to collect details
