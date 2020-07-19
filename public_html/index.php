@@ -80,8 +80,7 @@
 		card: {
     cardholderName: {
       required: true
-      // to make cardholder name required
-      // required: true
+      // Adding CardHolderName field to collect details
     }
   },
         }, function (createErr, instance) {
