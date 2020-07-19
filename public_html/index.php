@@ -43,9 +43,9 @@
              <form method="post" id="payment-form" action="<?php echo $baseUrl;?>checkout.php">
                     <section>
 					<label for="amount">
-                        <b><span class="input-label">Amount</span></b>
+                        <b><span class="input-label">Transaction Amount</span></b>
                         <div class="input-wrapper amount-wrapper">
-                            <input id="amount" name="amount" type="tel" min="1" placeholder="" value="">
+                            <input id="amount" name="amount" type="tel" min="1" placeholder="" value="100">
                         </div>
                     </label>
 					
@@ -69,7 +69,7 @@
     <script src="https://js.braintreegateway.com/web/dropin/1.23.0/js/dropin.min.js"></script>
     <script>
         var form = document.querySelector('#payment-form');
-        var client_token = "<?php echo($gateway->ClientToken()->generate()); ?>";
+        var client_token = "<?php echo($gateway->ClientToken()->generate()); ?>"; //Generates Client Auth
 
         braintree.dropin.create({
           authorization: client_token,
@@ -77,10 +77,9 @@
           paypal: {
             flow: 'vault'
           },
-		card: {
-    cardholderName: {
-      required: true
-      // Adding CardHolderName field to collect details
+		card: {       // Adding CardHolderName field to collect details
+        cardholderName: {
+        required: true
     }
   },
         }, function (createErr, instance) {
