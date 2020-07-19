@@ -82,7 +82,8 @@ function clicker() {
        <td>Status</td>
         <td><?php echo($transaction->status)?></td>
     </tr>
-    <tr>Created At</td>
+    <tr>
+      <td>Created At</td>
        <td><?php echo($transaction->createdAt->format('Y-m-d H:i:s'))?></td>
     </tr>
     <tr>
