@@ -39,13 +39,12 @@
     </div>
 </div>
 
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+<!-- Transaction Details trigger modal -->
+<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
  View Transaction Details
 </button>
 
-<!-- Modal -->
+<!-- Transaction Details Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -83,6 +82,33 @@
       <td>updated_at</td>
       <td><?php echo($transaction->updatedAt->format('Y-m-d H:i:s'))?></td>
     </tr>
+    <tr>
+     <td>bin</td>
+      <td><?php echo($transaction->creditCardDetails->bin)?></td>
+    </tr>
+    <tr>
+       <td>bin</td>
+                        <td><?php echo($transaction->creditCardDetails->bin)?></td>
+    </tr>
+    <tr>
+   <td>expiration_date</td>
+                        <td><?php echo($transaction->creditCardDetails->expirationDate)?></td>
+    </tr>
+    <tr>
+        <td>bin</td>
+                        <td><?php echo($transaction->creditCardDetails->bin)?></td>
+    </tr>
+    <tr>
+      
+                        <td>cardholder_name</td>
+                        <td><?php echo($transaction->creditCardDetails->cardholderName)?></td>
+    </tr>
+    
+      <tr>
+      
+                       <td>customer_location</td>
+                        <td><?php echo($transaction->creditCardDetails->customerLocation)?></td>
+    
   </tbody>
 </table>
       </div>
@@ -91,6 +117,12 @@
       </div>
     </div>
   </div>
-</div>                 
+</div>  
+
+
+                                             
+                                                            
+                                                                           
+                                                                                                         
 </body>
 </html>
