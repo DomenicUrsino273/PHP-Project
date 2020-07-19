@@ -79,22 +79,19 @@
         var form = document.querySelector('#payment-form');
         var client_token = "<?php echo($gateway->ClientToken()->generate()); ?>";
 
-        braintree.dropin.create({
-          authorization: client_token,
-          selector: '#bt-dropin',
-          paypal: {
-            flow: 'vault'
-          },
-       card: {
+ 
+ braintree.dropin.create({
+  authorization: client_token,
+  container: '#dropin-container',
+  card: {
     cardholderName: {
       required: true
       // to make cardholder name required
       // required: true
     }
-	   }
-		}
+  }
+}, /* ... */);
  
-
 
 		function (createErr, instance) {
           if (createErr) {
