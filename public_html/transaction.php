@@ -40,21 +40,23 @@
 </div>
 
 
-<!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Transaction Details</button>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+ View Transaction Details
+</button>
 
 <!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Transaction Details</h4>
+        <h5 class="modal-title" id="exampleModalLabel">Transaction Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
       <div class="modal-body">
-
+        
       <table width="200" border="1">
   <tbody>
     <tr>
@@ -83,23 +85,12 @@
     </tr>
   </tbody>
 </table>
-
-            
-                  
-                        
-       </div>
+      </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
-
   </div>
-</div>
-      
-      
-      
-      
-      
-      
+</div>                 
 </body>
 </html>
