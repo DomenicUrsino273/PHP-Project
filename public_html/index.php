@@ -84,14 +84,19 @@
           selector: '#bt-dropin',
           paypal: {
             flow: 'vault'
-          }, 
-		  card: {
-         cardholderName: {
-         required: false
+          },
+       card: {
+    cardholderName: {
+      required: true
       // to make cardholder name required
       // required: true
-    },
-        }, function (createErr, instance) {
+    }
+	   }
+		}
+ 
+
+
+		function (createErr, instance) {
           if (createErr) {
             console.log('Create Error', createErr);
             return;
