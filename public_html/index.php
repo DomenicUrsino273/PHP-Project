@@ -75,8 +75,10 @@
           authorization: client_token,
           selector: '#bt-dropin',
           paypal: {
-            flow: 'vault'
-          },
+    flow: 'checkout',
+    amount: '10.00',
+    currency: 'AUD'
+  },
 		card: {       // Adding CardHolderName field to collect details
         cardholderName: {
         required: true
