@@ -48,9 +48,9 @@ function clicker() {
 </div>
 
 <!-- Transaction Details trigger modal -->
-<button type="button" id="transaction-button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+<center><button type="button" id="transaction-button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
  View Transaction Details
-</button>
+</button></center>
 
 <!-- Transaction Details Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
