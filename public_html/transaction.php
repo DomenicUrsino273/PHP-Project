@@ -67,40 +67,39 @@ function clicker() {
       <table width="200" border="1">
   <tbody>
     <tr>
-        <td>id</td>
+        <td>Transaction ID</td>
         <td><?php echo($transaction->id)?></td>
     </tr>
     <tr>
-     <td>type</td>
+     <td>Transaction Type</td>
       <td><?php echo($transaction->type)?></td>
     </tr>
     <tr>
-      <td>amount</td>
-      <td><?php echo($transaction->amount)?></td>
+      <td>Amount</td>
+      <td>$<?php echo($transaction->amount)?></td>
     </tr>
     <tr>
-       <td>status</td>
+       <td>Status</td>
         <td><?php echo($transaction->status)?></td>
     </tr>
-    <tr>
-       <td>created_at</td>
+    <tr>Created At</td>
        <td><?php echo($transaction->createdAt->format('Y-m-d H:i:s'))?></td>
     </tr>
     <tr>
-      <td>updated_at</td>
+      <td>Updated At</td>
       <td><?php echo($transaction->updatedAt->format('Y-m-d H:i:s'))?></td>
     </tr>
     <tr>
-     <td>bin</td>
+     <td>Card Bin</td>
       <td><?php echo($transaction->creditCardDetails->bin)?></td>
     </tr>
     <tr>
-   <td>expiration_date</td>
+   <td>Card Exp. Date</td>
                         <td><?php echo($transaction->creditCardDetails->expirationDate)?></td>
     </tr>
     <tr>
       
-                        <td>cardholder_name</td>
+                        <td>CardHolder Name</td>
                         <td><?php echo($transaction->creditCardDetails->cardholderName)?></td>
     </tr>
     
