@@ -63,7 +63,10 @@ function clicker() {
         </button>
       </div>
       <div class="modal-body">
-        
+        <!-- Get me some customer names -->
+
+		<p><b>Customer Name:</b><?php echo($transaction->creditCardDetails->cardholderName)?></p> 
+		
       <table width="200" border="1">
   <tbody>
     <tr>
@@ -97,13 +100,7 @@ function clicker() {
     <tr>
    <td>Card Exp. Date</td>
                         <td><?php echo($transaction->creditCardDetails->expirationDate)?></td>
-    </tr>
-    <tr>
-      
-                        <td>CardHolder Name</td>
-                        <td><?php echo($transaction->creditCardDetails->cardholderName)?></td>
-    </tr>
-    
+    </tr>   
   </tbody>
 </table>
       </div>
