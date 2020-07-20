@@ -65,56 +65,25 @@ function clicker() {
       <div class="modal-body">
         <!-- Get me some customer names -->
 
-		<p><b>Customer Name:</b><?php echo($transaction->creditCardDetails->cardholderName)?></p> 
+		<p><b>Customer Name:</b> <?php echo($transaction->creditCardDetails->cardholderName)?></p> 
 		
-      <table width="200" border="1">
-  <tbody>
-    <tr>
-        <td>Transaction ID</td>
-        <td><?php echo($transaction->id)?></td>
-    </tr>
-    <tr>
-     <td>Transaction Type</td>
-      <td><?php echo($transaction->type)?></td>
-    </tr>
-    <tr>
-      <td>Amount</td>
-      <td>$<?php echo($transaction->amount)?></td>
-    </tr>
-    <tr>
-       <td>Status</td>
-        <td><?php echo($transaction->status)?></td>
-    </tr>
-    <tr>
-      <td>Created At</td>
-       <td><?php echo($transaction->createdAt->format('Y-m-d H:i:s'))?></td>
-    </tr>
-    <tr>
-      <td>Updated At</td>
-      <td><?php echo($transaction->updatedAt->format('Y-m-d H:i:s'))?></td>
-    </tr>
-    <tr>
-     <td>Card Bin</td>
-      <td><?php echo($transaction->creditCardDetails->bin)?></td>
-    </tr>
-    <tr>
-   <td>Card Exp. Date</td>
-                        <td><?php echo($transaction->creditCardDetails->expirationDate)?></td>
-    </tr>   
-  </tbody>
-</table>
+		<!-- Get me some transaction details -->
+		
+		<p><b>Transaction ID:</b> <?php echo($transaction->id)?></p> 
+		<p><b>Transaction Type:</b> <?php echo($transaction->type)?></p> 
+        <p><b>Amount:</b> $<?php echo($transaction->amount)?></p>
+		<p><b>Status:</b> <?php echo($transaction->status)?></p>
+		<p><b>Created At:</b> <?php echo($transaction->createdAt->format('Y-m-d H:i:s'))?></p>
+		<p><b>Updated At:</b> <?php echo($transaction->updatedAt->format('Y-m-d H:i:s'))?></p>
+		<p><b>Card Bin:</b> <?php echo($transaction->creditCardDetails->bin)?></p>
+		<p><b>Card Exp. Date:</b> <?php echo($transaction->creditCardDetails->expirationDate)?></p>
+		
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
-</div>  
-
-
-                                             
-                                                            
-                                                                           
-                                                                                                         
+</div>                                                                                                   
 </body>
 </html>
