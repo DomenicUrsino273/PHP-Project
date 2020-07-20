@@ -32,7 +32,7 @@ function clicker() {
         if (in_array($transaction->status, $transactionSuccessStatuses)) {
             $header = "Your Transaction Was Approved!";
         } else {
-            $header = "Your Transaction Failed!";
+            $header2 = "Your Transaction Failed!";
         }
     }
 ?>
@@ -40,7 +40,7 @@ function clicker() {
 <div class="wrapper"> 
     <div class="response container">
         <div class="content">
-	   <div class="alert alert-success" role="alert">
+	   <div class="alert alert-info" role="alert">
        <center><h2><?php echo($header)?></h2></center>
        </div>
         </div>
