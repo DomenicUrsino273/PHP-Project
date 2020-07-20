@@ -12,10 +12,10 @@ if (!getenv('BT_ENVIRONMENT') || !getenv('BT_MERCHANT_ID') || !getenv('BT_PUBLIC
 }
 
 $gateway = new Braintree\Gateway([
-    'environment' => getenv('BT_ENVIRONMENT'),
-    'merchantId' => getenv('BT_MERCHANT_ID'),
-    'publicKey' => getenv('BT_PUBLIC_KEY'),
-    'privateKey' => getenv('BT_PRIVATE_KEY')
+    'environment' => 'sandbox',
+    'merchantId' => 't4gvm7k8k4rctfgm',
+    'publicKey' => '93j87xf2pjzkpbzd',
+    'privateKey' => 'bf15671e1a93946470528351ae394605'
 ]);
 $baseUrl = stripslashes(dirname($_SERVER['SCRIPT_NAME']));
 $baseUrl = $baseUrl == '/' ? $baseUrl : $baseUrl . '/';
