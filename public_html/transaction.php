@@ -32,7 +32,7 @@ function clicker() {
         if (in_array($transaction->status, $transactionSuccessStatuses)) {
             $header = "Your Transaction Was Approved!";
         } else {
-            $header2 = "Your Transaction Failed!";
+            $header = "Your Transaction Failed!";
         }
     }
 ?>
