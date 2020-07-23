@@ -86,7 +86,7 @@
   },
         }, function (createErr, instance) {
           if (createErr) {
-            console.log('Create Error', createErr);
+            alert('Create Error', createErr); //Making the error alert instead of console-logging
             return;
           }
           form.addEventListener('submit', function (event) {
@@ -94,7 +94,7 @@
 
             instance.requestPaymentMethod(function (err, payload) {
               if (err) {
-                console.log('Request Payment Method Error', err);
+                alert('Request Payment Method Error', err); //Making the error alert instead of console-logging
                 return;
               }
 
