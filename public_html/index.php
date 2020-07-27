@@ -1,4 +1,8 @@
-<?php require_once("../includes/braintree_init.php"); ?>
+<?php require_once("../includes/braintree_init.php"); 
+
+$amount = $_POST["amount"];
+
+?>
 
 <html>
 
@@ -76,7 +80,7 @@
           selector: '#bt-dropin',
           paypal: {
     flow: 'checkout',
-    amount: '100.00',
+    amount: <?php echo $amount ?>,
     currency: 'AUD'
   },
 		card: {       // Adding CardHolderName field to collect details
