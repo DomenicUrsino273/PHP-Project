@@ -5,14 +5,8 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-<script> //Auto-Clicks the Transactions-Detail Button for Easy of Use
-function clicker() {
-  document.getElementById("transaction-button").click();
-}
-</script>
 
-
-<body onLoad=clicker()>
+<body>
 
 <?php
     require_once("../includes/header.php");
@@ -48,12 +42,14 @@ function clicker() {
 </div>
 
 <!-- Transaction Details trigger modal -->
-<center><button type="button" id="transaction-button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
- View Transaction Details
+<center><button type="button" id="transaction-button" class="btn btn-success" data-toggle="modal" data-target="#creditcard">
+ View Transaction Details (Credit Card)
+</button></center><center><button type="button" id="transaction-button" class="btn btn-success" data-toggle="modal" data-target="#paypal">
+ View Transaction Details (PayPal)
 </button></center>
 
 <!-- Transaction Details Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="creditcard" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
