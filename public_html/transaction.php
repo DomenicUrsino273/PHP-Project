@@ -100,20 +100,21 @@
       <div class="modal-body">
         <!-- Get me some customer names -->
 
-		<p><b>(PayPal) First Name:</b> <?php echo($transaction->paypalDetails->payerFirstName)?></p> 
-		<p><b>(PayPal) Last Name:</b> <?php echo($transaction->paypalDetails->payerLastName)?></p> 
+		<p><b>First Name:</b> <?php echo($transaction->paypalDetails->payerFirstName)?></p> 
+		<p><b>Last Name:</b> <?php echo($transaction->paypalDetails->payerLastName)?></p> 
+		<p><b>Email Address:</b> <?php echo($transaction->paypalDetails->payerEmail)?></p> 
 
 		
 		<!-- Get me some transaction details -->
 		
 		<p><b>Transaction ID:</b> <?php echo($transaction->id)?></p> 
-		<p><b>Transaction Type:</b> <?php echo($transaction->type)?></p> 
-        <p><b>Amount:</b> $<?php echo($transaction->amount)?></p>
-		<p><b>Status:</b> <?php echo($transaction->status)?></p>
+		<p><b>Authorisation ID:</b> <?php echo($transaction->paypalDetails->authorizationId)?></p> 
+		<p><b>Payment ID:</b> <?php echo($transaction->paypalDetails->paymentId)?></p>
+        <p><b>Payer ID:</b> <?php echo($transaction->paypalDetails->payerId)?></p>
+		<p><b>Payer Status:</b> <?php echo($transaction->paypalDetails->payerStatus)?></p>
 		<p><b>Created At:</b> <?php echo($transaction->createdAt->format('Y-m-d H:i:s'))?></p>
 		<p><b>Updated At:</b> <?php echo($transaction->updatedAt->format('Y-m-d H:i:s'))?></p>
-		<p><b>Card Bin:</b> <?php echo($transaction->creditCardDetails->bin)?></p>
-		<p><b>Card Exp. Date:</b> <?php echo($transaction->creditCardDetails->expirationDate)?></p>
+		
 		
       </div>
       <div class="modal-footer">
