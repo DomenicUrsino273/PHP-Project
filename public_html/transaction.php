@@ -61,7 +61,7 @@
       <div class="modal-body">
         <!-- Get me some customer names -->
 
-		<p><b>Customer Name:</b> <?php echo($transaction->creditCardDetails->cardholderName)?></p> 
+		<p><b>Card Holder Name:</b> <?php echo($transaction->creditCardDetails->cardholderName)?></p> 
 		<p><b>(PayPal) Customer Name:</b> <?php echo($transaction->paypalDetails->payerFirstName)?></p> 
 
 		
