@@ -70,13 +70,12 @@
     <script>
         var form = document.querySelector('#payment-form');
         var client_token = "<?php echo($gateway->ClientToken()->generate()); ?>"; //Generates Client Auth
-		var paypal_amount = "<?php $_POST['amount']; ?>";
         braintree.dropin.create({
           authorization: client_token,
           selector: '#bt-dropin',
           paypal: {
           flow: 'checkout',
-	      amount: paypal_amount,
+	      amount: jQuery("amount").val(),
           currency: 'AUD'
   },
 		card: {       // Adding CardHolderName field to collect details
