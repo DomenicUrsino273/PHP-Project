@@ -42,18 +42,20 @@
 </div>
 
 <!-- Transaction Details trigger modal -->
-<center><button type="button" id="transaction-button" class="btn btn-success" data-toggle="modal" data-target="#creditcard">
+<p><center><button type="button" id="transaction-button" class="btn btn-success" data-toggle="modal" data-target="#creditcard">
  View Transaction Details (Credit Card)
-</button></center><center><button type="button" id="transaction-button" class="btn btn-success" data-toggle="modal" data-target="#paypal">
+</button></center></p>
+
+<p><center><button type="button" id="transaction-button" class="btn btn-success" data-toggle="modal" data-target="#paypal">
  View Transaction Details (PayPal)
-</button></center>
+</button></center></p>
 
 <!-- Transaction Details Modal -->
 <div class="modal fade" id="creditcard" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Transaction Details</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Credit Card Transaction Details</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -90,7 +92,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Transaction Details</h5>
+        <h5 class="modal-title" id="exampleModalLabel">PayPal Transaction Details</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -98,8 +100,8 @@
       <div class="modal-body">
         <!-- Get me some customer names -->
 
-		<p><b>Card Holder Name:</b> <?php echo($transaction->creditCardDetails->cardholderName)?></p> 
-		<p><b>(PayPal) Customer Name:</b> <?php echo($transaction->paypalDetails->payerFirstName)?></p> 
+		<p><b>(PayPal) First Name:</b> <?php echo($transaction->paypalDetails->payerFirstName)?></p> 
+		<p><b>(PayPal) Last Name:</b> <?php echo($transaction->paypalDetails->payerLastName)?></p> 
 
 		
 		<!-- Get me some transaction details -->
