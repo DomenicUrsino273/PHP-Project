@@ -1,8 +1,4 @@
-<?php require_once("../includes/braintree_init.php"); 
-
-$amount = $_POST["amount"];
-
-?>
+<?php require_once("../includes/braintree_init.php"); ?>
 
 <html>
 
@@ -12,7 +8,9 @@ $amount = $_POST["amount"];
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 <script type="text/javascript">
-   var amount = "<?php echo $amount; ?>";
+   
+   var paypalAmount = document.getElementById("amount").value;
+   
 </script>
 
 <body>
@@ -86,7 +84,7 @@ $amount = $_POST["amount"];
           paypal: {
     flow: 'checkout',
     currency: 'AUD'
-	amount: var amount()
+	amount: paypalAmount;
   },
 		card: {       // Adding CardHolderName field to collect details
         cardholderName: {
