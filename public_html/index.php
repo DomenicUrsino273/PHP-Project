@@ -9,7 +9,12 @@
 
 <script type="text/javascript">
    
+       function myFunction() {
+		   
    var paypalAmount = document.getElementById("amount").value;
+   
+	   }
+	   
    
 </script>
 
@@ -83,8 +88,8 @@
           selector: '#bt-dropin',
           paypal: {
     flow: 'checkout',
+	amount: myFunction(),
     currency: 'AUD'
-	amount: paypalAmount;
   },
 		card: {       // Adding CardHolderName field to collect details
         cardholderName: {
