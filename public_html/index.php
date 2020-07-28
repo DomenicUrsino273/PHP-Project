@@ -9,13 +9,11 @@
 
 <script type="text/javascript">
    
-       function myFunction() {
+   function myFunction() {
 		   
    var paypalAmount = document.getElementById("amount").value;
    
 	   }
-	   
-   
 </script>
 
 <body>
@@ -59,6 +57,7 @@
                         <div class="input-wrapper amount-wrapper">
                             <input id="amount" name="amount" type="tel" min="1" placeholder="" value="100">
                         </div>
+						 <button class="btn btn-success" onclick="myFunction()" type="submit"><span>Load PayPal Amount</span></button>
                     </label>
 					
                     <p><div class="bt-drop-in-wrapper">
