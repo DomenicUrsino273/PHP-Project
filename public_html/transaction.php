@@ -46,7 +46,7 @@
  View Transaction Details (Credit Card)
 </button></center></p>
 
-<p><center><button type="button" id="transaction-button" class="btn btn-success" data-toggle="modal" data-target="#paypal">
+<p><center><button type="button" id="transaction-button" class="btn btn-primary" data-toggle="modal" data-target="#paypal">
  View Transaction Details (PayPal)
 </button></center></p>
 
@@ -64,7 +64,6 @@
         <!-- Get me some customer names -->
 
 		<p><b>Card Holder Name:</b> <?php echo($transaction->creditCardDetails->cardholderName)?></p> 
-		<p><b>(PayPal) Customer Name:</b> <?php echo($transaction->paypalDetails->payerFirstName)?></p> 
 
 		
 		<!-- Get me some transaction details -->
