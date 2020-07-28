@@ -85,8 +85,8 @@ $amount = $_POST["amount"];
           selector: '#bt-dropin',
           paypal: {
     flow: 'checkout',
-    amount: amount(),
     currency: 'AUD'
+	amount: var amount()
   },
 		card: {       // Adding CardHolderName field to collect details
         cardholderName: {
