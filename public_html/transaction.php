@@ -66,7 +66,7 @@ function clicker() {
         <!-- Get me some customer names -->
 
 		<p><b>Customer Name:</b> <?php echo($transaction->creditCardDetails->cardholderName)?></p> 
-		<p><b>(PayPal) Customer Name:</b> <?php echo($transaction->customerDetails->firstName)?></p> 
+		<p><b>(PayPal) Customer Name:</b> <?php echo($transaction->paypalDetails->payerFirstName)?></p> 
 
 		
 		<!-- Get me some transaction details -->
