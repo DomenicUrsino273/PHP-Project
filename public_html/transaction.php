@@ -82,6 +82,48 @@
       </div>
     </div>
   </div>
-</div>                                                                                                   
+</div>      
+
+<!-- PayPal Transaction Details Modal -->
+
+<div class="modal fade" id="paypal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Transaction Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Get me some customer names -->
+
+		<p><b>Card Holder Name:</b> <?php echo($transaction->creditCardDetails->cardholderName)?></p> 
+		<p><b>(PayPal) Customer Name:</b> <?php echo($transaction->paypalDetails->payerFirstName)?></p> 
+
+		
+		<!-- Get me some transaction details -->
+		
+		<p><b>Transaction ID:</b> <?php echo($transaction->id)?></p> 
+		<p><b>Transaction Type:</b> <?php echo($transaction->type)?></p> 
+        <p><b>Amount:</b> $<?php echo($transaction->amount)?></p>
+		<p><b>Status:</b> <?php echo($transaction->status)?></p>
+		<p><b>Created At:</b> <?php echo($transaction->createdAt->format('Y-m-d H:i:s'))?></p>
+		<p><b>Updated At:</b> <?php echo($transaction->updatedAt->format('Y-m-d H:i:s'))?></p>
+		<p><b>Card Bin:</b> <?php echo($transaction->creditCardDetails->bin)?></p>
+		<p><b>Card Exp. Date:</b> <?php echo($transaction->creditCardDetails->expirationDate)?></p>
+		
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+                                                                                             
 </body>
 </html>
