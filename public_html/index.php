@@ -70,7 +70,7 @@
     <script>
         var form = document.querySelector('#payment-form');
         var client_token = "<?php echo($gateway->ClientToken()->generate()); ?>"; //Generates Client Auth
-		var paypal_amount = $("input#amount").val()
+		var paypal_amount = $("input#amount").val() //Gets Value from TextBox and makes it a variable for PayPal amount aswell as Credit Card Amount
 		
         braintree.dropin.create({
           authorization: client_token,
