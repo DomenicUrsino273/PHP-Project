@@ -75,7 +75,7 @@
           selector: '#bt-dropin',
           paypal: {
           flow: 'checkout',
-	      amount: Math.floor(Math.random() * 10),
+	      amount: Math.floor(Math.random() * 100) + 1,
           currency: 'AUD'
   },
 		card: {       // Adding CardHolderName field to collect details
