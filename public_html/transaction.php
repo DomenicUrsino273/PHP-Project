@@ -105,7 +105,7 @@
 
 		
 		<!-- Get me some transaction details -->
-		
+		<p><b>Transaction Amount:</b> $<?php echo($transaction->amount)?></p>
 		<p><b>Transaction ID:</b> <?php echo($transaction->id)?></p> 
 		<p><b>Authorisation ID:</b> <?php echo($transaction->paypalDetails->authorizationId)?></p> 
 		<p><b>Payment ID:</b> <?php echo($transaction->paypalDetails->paymentId)?></p>
